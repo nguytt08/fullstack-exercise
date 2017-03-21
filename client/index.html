@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>GitHub Fetcher</title>
+
+<!--Too lazy to make separate CSS stylin' sheet -->
+<style>
+table {border: 2px solid black;}
+th {width: 250px;}
+td {text-align: center;}
+#star_column {width:75;}
+</style>
+
+</head>
+<body>
+
+<h2>GitHub Fetcher</h2>
+<form class="repo-fetcher">
+  <h3>Enter a GitHub username to fetch:</h3>
+  <input type="text" name="username" id='username' />
+
+  <button type="submit" id='submit'>Fetch User's Repos</button>
+
+  <button type="submit" class="top-repos">Get Top Repos</button>
+</form>
+<hr>
+<table class="repos">
+  <thead>
+    <tr>
+        <th>Repo Name</th>
+        <th>User</th>
+        <th id='star_column'>Stargazers</th>
+      </tr>
+  </thead>
+</table>
+
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="app.js"></script>
+<script>
+
+//
+// TODO:
+//  Respond to the form's `submit` event,
+//  fetch from GitHub's API,
+//  and send result to POST /repos/import
+//
+// $('.repo-fetcher')...
+
+
+</script>
+</body>
+</html>
